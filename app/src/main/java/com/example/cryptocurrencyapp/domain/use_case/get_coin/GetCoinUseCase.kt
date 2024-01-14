@@ -2,9 +2,7 @@ package com.example.cryptocurrencyapp.domain.use_case.get_coin
 
 import android.net.http.HttpException
 import com.example.cryptocurrencyapp.common.Response
-import com.example.cryptocurrencyapp.data.remote.dto.toCoin
 import com.example.cryptocurrencyapp.data.remote.dto.toCoinDetail
-import com.example.cryptocurrencyapp.domain.model.Coin
 import com.example.cryptocurrencyapp.domain.model.CoinDetail
 import com.example.cryptocurrencyapp.domain.repository.CoinRepository
 import kotlinx.coroutines.flow.Flow

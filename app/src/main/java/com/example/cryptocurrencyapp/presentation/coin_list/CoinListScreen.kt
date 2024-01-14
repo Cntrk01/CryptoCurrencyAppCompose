@@ -15,14 +15,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
-import com.example.cryptocurrencyapp.presentation.Screen
 import com.example.cryptocurrencyapp.presentation.coin_list.component.CoinListItem
 import com.example.cryptocurrencyapp.presentation.coin_list.viewmodel.CoinListViewModel
 
 @Composable
 fun CoinListScreen(
-    navController: NavController,
+    itemDetailClick : (String) -> Unit,
     viewModel: CoinListViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
@@ -34,7 +32,7 @@ fun CoinListScreen(
                 CoinListItem(
                     coin = coin,
                     onItemClick = {
-                        navController.navigate(route = Screen.CoinDetailScreen.route + "/${coin.id}")
+                        itemDetailClick.invoke(it.id)
                     })
             }
         }
