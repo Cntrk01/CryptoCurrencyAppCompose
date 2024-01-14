@@ -1,5 +1,5 @@
 Bu projemde yine Compose kullanarak becerilerimi geliştirmeye devam ediyorum.Projede API'den gelen Coin listelerini kullanıcı ekranında gösteriyorum.Tıkladığı zaman detaya tıklanılan coinin idsini tekrar apiye 
-istek atarak detayı getirip kullanıcının karşısına çıkartıyorum.MVVM mimarisi ve CLEAN ARCHITECTURE standartlarına dikkat ederek geliştirdim.
+istek atarak detayı getirip kullanıcının karşısına çıkartıyorum.Tabi bunu yaparken detay sayfasındaki id'yi argüman ile istiyorum ve viewmodel içerisinde SavedStateHandle aracılığıyla gelen idyi alarak apiye gönderiyorum.MVVM mimarisi ve CLEAN ARCHITECTURE standartlarına dikkat ederek geliştirdim.
 
 
 Projede kullandığım içerikler : 
@@ -31,6 +31,9 @@ Projede kullandığım içerikler :
 -Dark Theme
 
 
+
+
+-SavedStateHandle
 
 
 
